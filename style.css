@@ -7,23 +7,23 @@
 	list-style:none;
 	box-sizing:border-box;	
 }
-	
+
 :root{
-	--bg-preto:rgb(0,0,0);
-	--nao-metal:rgb(180,210,100);
-	--gas-nobre:rgb(100,180,225);
-	--metal-alcalino:rgb(245,200,100);
+	--bg-white:rgb(255, 255, 255);
+	--nao-metal:rgb(231, 0, 212);
+	--gas-nobre:rgb(111, 21, 185);
+	--metal-alcalino:rgb(255, 178, 11);
 	--metal-alcalino-terroso:rgb(240,230,90);
-	--halogenio:rgb(170,225,255);
+	--halogenio:rgb(27, 83, 13);
 	--outros-metais:rgb(190,210,210);
 	--metal-transicao:rgb(245,175,175);
-	--lantanideo:rgb(150,225,225);
-	--actinidio:rgb(230,190,220);
+	--lantanideo:rgb(54, 68, 68);
+	--actinidio:rgb(106, 117, 39);
 }
 
 body{
 	font:1em/1 'Montserrat', sans-serif;
-	color:rgb(255,255,255);
+	color:rgb(187, 136, 136);
 	text-align:center;
 	padding:1em 5%;
 	background:var(--bg-preto);	
@@ -157,6 +157,12 @@ li:before{
 	top:.25em;
 }
 
+div:hover{
+	transition:.2s;
+	transform:scale(1.5);
+	cursor:pointer;
+	z-index:2;
+}
 
 @media only screen and (min-width:92.5em){
 	@supports (display:grid){
@@ -206,12 +212,7 @@ li:before{
 			margin: 0;
 		}
 			
-		div:hover{
-			transition:.2s;
-			transform:scale(1.5);
-			cursor:pointer;
-			z-index:2;
-		}
+		
 		
 		
 		/* FOOTER */
